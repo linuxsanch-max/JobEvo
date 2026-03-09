@@ -222,7 +222,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("JobEvo PY - Tu Asistente de Empleo que Evoluciona Contigo")
+st.title("JobEvo - Arandu Oguata Mbarete Ári")
 
 feedback_anterior = load_feedback()
 if feedback_anterior:
@@ -230,17 +230,17 @@ if feedback_anterior:
 
 # Formulario de perfil
 st.subheader("Cuéntame sobre ti")
-nombre = st.text_input("Nombre Completo (ej: Lenys Rosalia Sánchez Cáceres)")
+nombre = st.text_input("Nombre Completo")
 edad = st.text_input("Edad (ej: 22)")
 estudios = st.text_input("Estudios (ej: Ingeniería en Informática en curso)")
 experiencia = st.text_input("Experiencia (ej: Ninguna, o pasantía en X)")
 habilidades_tecnicas = st.text_input("Habilidades Técnicas (ej: Python, prompts IA)")
 habilidades_blandas = st.text_input("Habilidades Blandas (ej: Adaptabilidad, trabajo en equipo)")
 proyectos = st.text_area("Proyectos Destacados (ej: Automatización con IA)")
-telefono = st.text_input("Teléfono (ej: +595 981 123 456)")
-email = st.text_input("Email (ej: lenys@email.com)")
+telefono = st.text_input("Teléfono")
+email = st.text_input("Email (ej: @email.com)")
 ubicacion = st.text_input("Ubicación (ej: Asunción)")
-linkedin = st.text_input("LinkedIn (ej: linkedin.com/lenys)")
+linkedin = st.text_input("LinkedIn (ej: linkedin.com)")
 idiomas = st.text_input("Idiomas (ej: Español nativo, guaraní básico, inglés intermedio)")
 referencias = st.text_input("Referencias (ej: Disponibles a pedido)")
 perfil_profesional = st.text_area("Perfil Profesional (resumen corto)")
@@ -299,3 +299,4 @@ st.caption("JobEvo PY v0.9 - Tu asistente que evoluciona contigo.")
                    
 
        
+
