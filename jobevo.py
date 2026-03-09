@@ -356,7 +356,7 @@ def main():
 
         referencias = st.text_area("Referencias (una por línea, opcional, ej: Nombre - Cargo - Contacto)", height=110)
 
-        if st.button("Generar mi CV en HTML"):
+        if st.button("Generar mi CV"):
             if not nombre:
                 st.error("Ingresa al menos tu nombre")
                 return
@@ -389,12 +389,12 @@ def main():
             st.session_state.etapa = 1
 
     if st.session_state.etapa == 1:
-        st.success("¡CV en HTML generado con éxito! 🎉")
+        st.success("¡CV generado con éxito! 🎉")
 
         # Descarga del HTML
         html_content = st.session_state.html_cv
         st.download_button(
-            label="Descargar mi CV en HTML",
+            label="Descargar mi CV",
             data=html_content,
             file_name=f"CV_{st.session_state.datos['nombre'].replace(' ','_')}.html",
             mime="text/html",
@@ -463,7 +463,7 @@ def main():
                 st.markdown(f"**Feedback:** {feedback}")
 
         st.markdown("---")
-        st.markdown("**¡Seguí practicando!** Cada intento te acerca más a esa entrevista exitosa. 💪")
+        st.markdown("**¡Sigue practicando!** Cada intento te acerca más a esa entrevista exitosa. 💪")
         st.markdown(f"Estás preparándote para brillar en el puesto de **{puesto or 'tu rol deseado'}** {f'en ' + empresa if empresa else ''}.")
 
         col1, col2 = st.columns(2)
@@ -502,5 +502,6 @@ if __name__ == "__main__":
                    
 
        
+
 
 
