@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import datetime
 import io
-from weasyprint import HTML
+# from weasyprint import HTML
 import base64
 
 # ────────────────────────────────────────────────
@@ -507,4 +507,5 @@ def main():
                 st.rerun()
 
 if __name__ == "__main__":
+
     main()
